@@ -31,35 +31,28 @@
 
 
 
-				<section data-markdown>
+				<section data-markdown data-transition="fade">
 					<script type="text/template">
 						## The Future of Bumblebee
 					</script>
         </section>
 
-				<!-- <section data-markdown>
-					<script type="text/template">
-						Where do we go from here?
-						<img src="./assets/bbb-front-page.png" alt="">
-					</script>
-        </section> -->
-
-        <section>
+        <section data-transition="fade">
           <h2>Bumblebee is aging</h2>
           <img src="./assets/bbb-front-page.png" alt="">
         </section>
 
-				<section data-transition="none">
+				<section data-transition="fade">
           <h2>Slow...</h2>
-          <span class="fragment fade-in">
+          <span class="fragment fade">
             <img src="./assets/slow-init-load.png" alt="" height=250>
           </span>
-          <span class="fragment fade-in">
+          <span class="fragment fade">
             <img src="./assets/loading-spinner.gif" alt="" height=250>
           </span>
         </section>
 
-        <section data-transition="none">
+        <section data-transition="fade">
           <img src="./assets/madman.gif" alt="">
         </section>
 
@@ -97,7 +90,7 @@
           <h2>Tech Stack</h2>
           <ul>
             <li class="fragment">BackboneJs & React</li>
-            <li class="fragment">Python backend</li>
+            <li class="fragment">Python backend (Flask)</li>
           </ul>
         </section>
 
@@ -126,12 +119,27 @@
         </section>
 
         <section>
+          <h2>Unfurl Links</h2>
+          <p class="fragment">
+            <img src="./assets/slack-unfurl-working.png" alt="">
+          </p>
+          <p class="fragment">
+            <img src="./assets/slack-unfurl.png" alt="">
+          </p>
+        </section>
+
+        <section>
           <h2>User Experience</h2>
           <ul>
             <li class="fragment">Not completely responsive</li>
             <li class="fragment">Bad user feedback</li>
             <li class="fragment">Confusing or hidden features</li>
           </ul>
+        </section>
+
+        <section>
+          <h2>Mobile is bad...</h2>
+          <img src="./assets/mobile-bbb.png" alt="" height=500>
         </section>
 
         <section>
@@ -216,6 +224,16 @@
         </section>
 
         <section>
+          <h2>User Experience</h2>
+          <ul>
+            <li class="fragment">Consolidate and simplify interface</li>
+            <li class="fragment">Easier to implement user requested features</li>
+            <li class="fragment">Better mobile usability</li>
+            <li class="fragment">Prioritize based on user feedback</li>
+          </ul>
+        </section>
+
+        <section>
           <h2>Easier Maintenance</h2>
           <ul>
             <li class="fragment">Support newer language features</li>
@@ -237,7 +255,7 @@
             <ul>
               <li class="fragment">Visual components need to be refactored</li>
             </ul>
-            <li class="fragment">Continued BBB maintenance</li>
+            <li class="fragment">Continued Bumblebee maintenance</li>
             <li class="fragment">Gradual work on new system</li>
             <li class="fragment">Create MVP</li>
           </ul>
@@ -246,6 +264,102 @@
         <section>
           <h2>Questions?</h2>
         </section>
+
+        <section>
+          <small>intentionally blank</small>
+        </section>
+
+        <section>
+          <h2>Vue internals</h2>
+          <ul>
+            <li class="fragment">MVVM pattern</li>
+            <li class="fragment">Action -> Model -> Diff -> Render</li>
+            <li class="fragment">Virtual DOM</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Vue MVVM</h2>
+          <img src="./assets/vue-mvvm.png" alt="">
+        </section>
+
+        <section>
+          <h2>Vue Databinding</h2>
+          <img src="./assets/vue-databinding.png" alt="" height=500>
+        </section>
+
+        <section>
+          <h2>Flux</h2>
+          <ul>
+            <li class="fragment">Technique for state management</li>
+            <li class="fragment">Reducers and single store</li>
+            <li class="fragment">Non-immutable data structures</li>
+            <li class="fragment">Pure functions</li>
+          </ul>
+        </section>
+
+        <section>
+          <p><img src="./assets/flux.png" alt="" height="600px"></p>
+        </section>
+
+        <section>
+          <h2>Reducers</h2>
+          <p class="fragment">
+            <img src="./assets/reducers.png" alt="" height="500px">
+          </p>
+        </section>
+
+        <section>
+          <h2>Middleware</h2>
+          <p class="fragment">
+            <img src="./assets/middleware.png" alt="" height="500px">
+          </p>
+        </section>
+
+        <section>
+          <h2>Component Communication</h2>
+          <p class="fragment">
+            <img src="./assets/component-communication-2.png" alt="" height=500>
+          </p>
+        </section>
+
+        <section>
+          <h2>Connected Components</h2>
+          <p class="fragment">
+            <img src="./assets/connected-components.png" alt="" height=400>
+          </p>
+        </section>
+
+        <section>
+          <h2>Vuex</h2>
+          <ul>
+            <li class="fragment">Vue's implementation of Flux</li>
+            <li class="fragment">Baked into the core framework</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Vuex</h2>
+          <img src="./assets/vuex.png" alt="">
+        </section>
+
+        <section>
+          <h2>Nuxt</h2>
+          <ul>
+            <li class="fragment">SSR skeleton/framework for Vue</li>
+            <li class="fragment">Provides scripts, hooks, middleware, etc.</li>
+            <li class="fragment">Based on Node.js server</li>
+            <li class="fragment">Selective rendering</li>
+            <li class="fragment">Bundling of client/server automatically</li>
+          </ul>
+        </section>
+
+        <section>
+          <img src="./assets/nuxt.jpeg" alt="">
+        </section>
+
+
+
 
 			</div>
 		</div>
