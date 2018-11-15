@@ -1,0 +1,270 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+
+
+
+
+
+
+				<section data-markdown>
+					<script type="text/template">
+						## The Future of Bumblebee
+					</script>
+        </section>
+
+				<!-- <section data-markdown>
+					<script type="text/template">
+						Where do we go from here?
+						<img src="./assets/bbb-front-page.png" alt="">
+					</script>
+        </section> -->
+
+        <section>
+          <h2>Bumblebee is aging</h2>
+          <img src="./assets/bbb-front-page.png" alt="">
+        </section>
+
+				<section data-transition="none">
+          <h2>Slow...</h2>
+          <span class="fragment fade-in">
+            <img src="./assets/slow-init-load.png" alt="" height=250>
+          </span>
+          <span class="fragment fade-in">
+            <img src="./assets/loading-spinner.gif" alt="" height=250>
+          </span>
+        </section>
+
+        <section data-transition="none">
+          <img src="./assets/madman.gif" alt="">
+        </section>
+
+        <section data-transition="fade">
+          <h2>Load Time</h2>
+          <p class="fragment">
+            Average application load time: <strong>5.79s</strong>
+          </p>
+          <p class="fragment">
+            Many unnecessary page renders/reflows
+          </p>
+          <p class="fragment">
+            <img src="./assets/bbb-time-slice.png" alt="">
+          </p>
+        </section>
+
+        <section data-transition="fade">
+          <h2>Lighthouse</h2>
+          <p class="fragment">
+            <img src="./assets/lighthouse-report.png" alt="">
+          </p>
+        </section>
+
+        <section>
+          <h2>Why?</h2>
+          <ul>
+            <li class="fragment">Based on older (+4 years) tech stack</li>
+            <li class="fragment">Hard to maintain</li>
+            <li class="fragment">Hard to integrate with user applications</li>
+            <li class="fragment">Bad mobile performance</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Tech Stack</h2>
+          <ul>
+            <li class="fragment">BackboneJs & React</li>
+            <li class="fragment">Python backend</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Maintenance</h2>
+          <ul>
+            <li class="fragment">Separation of concerns (DRY)</li>
+            <li class="fragment">Complicated builds</li>
+            <li class="fragment">Too many dependencies (100+ 3rd party libs)</li>
+            <li class="fragment">Testing...</li>
+          </ul>
+        </section>
+
+        <section data-transition="none">
+          <img src="./assets/what-the-hell.webp" alt="">
+        </section>
+
+        <section>
+          <h2>Integrations & SEO</h2>
+          <ul>
+            <li class="fragment">Zotero, Bookends, etc.</li>
+            <li class="fragment">Unfurl links</li>
+            <li class="fragment">Scrapers, non-js users</li>
+            <li class="fragment">Google, Bing, others</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>User Experience</h2>
+          <ul>
+            <li class="fragment">Not completely responsive</li>
+            <li class="fragment">Bad user feedback</li>
+            <li class="fragment">Confusing or hidden features</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Accessibility</h2>
+          <ul>
+            <li class="fragment">Facets not useable by screen readers</li>
+            <li class="fragment">Page regions can get readers into loops</li>
+            <li class="fragment">Some sections inaccessible</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>It Gets Better</h3>
+          <p>
+            <img src="./assets/whew.webp" alt="">
+          </p>
+        </section>
+
+        <section>
+          <h2>Types of Web Applications</h2>
+          <ul>
+            <li class="fragment">Server-rendered (traditional)</li>
+            <li class="fragment">Client-rendered (SPA)</li>
+            <li class="fragment">Hybrid (universal)</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Hybrid Approach</h2>
+          <ul>
+            <li class="fragment">Lives on both client and server</li>
+            <li class="fragment">SEO is easier</li>
+            <li class="fragment">Less load on server</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Proposal</h2>
+          <ul>
+            <li class="fragment">New hybrid web app</li>
+            <li class="fragment">Uses new tech stack</li>
+            <li class="fragment">Updated UI framework</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>New Tech Stack</h2>
+          <ul>
+            <li class="fragment">Vue.js + Nuxt</li>
+            <li class="fragment">Node.js server (proxy to flask)</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>How will it be better?</h2>
+          <ul>
+            <li class="fragment">Better state management</li>
+            <li class="fragment">Easier maintenance</li>
+            <li class="fragment">SEO, non-js crawler support</li>
+            <li class="fragment">Responsive</li>
+            <li class="fragment">FASTER!</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Speed Improvements</h2>
+          <ul>
+            <li class="fragment">Consistent load times < 1s</li>
+            <li class="fragment">Fewer page renders, utilizing virtual DOM</li>
+            <li class="fragment">Pre-rendering on server, hydrate on client</li>
+          </ul>
+          <p>* tested on prototype (wip)</p>
+        </section>
+
+        <section>
+          <h2>SEO, Non-js</h2>
+          <ul>
+            <li class="fragment">Metadata rendered server-side</li>
+            <li class="fragment">Non-js users possible</li>
+            <li class="fragment">Google, Bing, unfurl crawlers should just work</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Easier Maintenance</h2>
+          <ul>
+            <li class="fragment">Support newer language features</li>
+            <li class="fragment">Better tooling</li>
+            <li class="fragment">Batteries included (fewer dependencies)</li>
+            <li class="fragment">Simplified builds</li>
+            <li class="fragment">Easier testing...</li>
+          </ul>
+        </section>
+
+        <section>
+          <p><img src="./assets/yes.webp" alt=""></p>
+        </section>
+
+        <section>
+          <h2>How We Get There</h2>
+          <ul>
+            <li class="fragment">90% rewrite</li>
+            <ul>
+              <li class="fragment">Visual components need to be refactored</li>
+            </ul>
+            <li class="fragment">Continued BBB maintenance</li>
+            <li class="fragment">Gradual work on new system</li>
+            <li class="fragment">Create MVP</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Questions?</h2>
+        </section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
