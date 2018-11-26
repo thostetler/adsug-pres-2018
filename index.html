@@ -38,16 +38,6 @@
         </section>
 
         <section data-transition="fade">
-          <h2>
-            <span style='color:red;text-decoration:line-through'>
-              <span style='color:rgba(255,255,255,0.5);'>Bumblebee</span>
-            </span> New ADS Update
-          </h2>
-          <h4>ADSUG 2018</h4>
-          <h5>Tim Hostetler</h5>
-        </section>
-
-        <section data-transition="fade">
           <h2>Some stats from last year</h2>
           <ul style="float:left">
             <li class="fragment">30 Releases</li>
@@ -96,7 +86,7 @@
         </section>
 
         <section data-transition="fade">
-          <h2>User Study Results</h2>
+          <h2>Usability Study Results</h2>
           <ul class="fragment">
             <li>Interesting point 1</li>
             <li>Interesting point 2</li>
@@ -138,15 +128,15 @@
         <section data-transition="fade">
           <h2>Considerations</h2>
           <ul>
-            <li class="fragment">Possible refactor (rewrite)</li>
-            <li class="fragment">Newer front-end frameworks/technologies</li>
+            <li class="fragment">Refactor/Update codebase</li>
+            <li class="fragment">Move to newer front-end frameworks/technologies</li>
             <li class="fragment">How to transition properly</li>
             <li class="fragment">Balance priorities</li>
           </ul>
         </section>
 
         <section data-transition="fade">
-        <h2>What a rewrite could fix</h2>
+        <h2>What refactoring could fix</h2>
         <ul>
           <li class="fragment">Speed improvements (perceived & actual)</li>
           <li class="fragment">Easier maintenance, less bugs</li>
@@ -156,7 +146,7 @@
         </section>
 
         <section data-transition="fade">
-          <h2>Questions</h2>
+          <h2>Questions?</h2>
         </section>
 
         <section data-transition="fade">
@@ -165,12 +155,12 @@
 
 
         <section data-transition="fade">
-          <h2>Bumblebee is aging</h2>
+          <h5>Bumblebee is showing it's age</h5>
           <img src="./assets/bbb-front-page.png" alt="">
         </section>
 
         <section data-transition="fade">
-          <h2>Slow...</h2>
+          <h2>Most Complaints</h2>
           <span class="fragment fade">
             <img src="./assets/slow-init-load.png" alt="" height=250>
           </span>
@@ -215,10 +205,11 @@
 
         <section>
           <h2>Tech Stack</h2>
-          <ul>
-            <li class="fragment">BackboneJs & React</li>
-            <li class="fragment">Python backend (Flask)</li>
-          </ul>
+          <p>BackboneJs & React</p>
+          <p>
+            <img src="./assets/backbone-logo.png" alt="" height=200>
+            <img src="./assets/react-logo.png" alt="" height=200>
+          </p>
         </section>
 
         <section>
@@ -265,7 +256,7 @@
         </section>
 
         <section>
-          <h2>Mobile is bad...</h2>
+          <h2>Mobile responsiveness</h2>
           <img src="./assets/mobile-bbb.png" alt="" height=500>
         </section>
 
@@ -289,7 +280,7 @@
           <h2>Types of Web Applications</h2>
           <ul>
             <li class="fragment">Server-rendered (traditional)</li>
-            <li class="fragment">Client-rendered (SPA)</li>
+            <li class="fragment">Client-rendered (single page application)</li>
             <li class="fragment">Hybrid (universal)</li>
           </ul>
         </section>
@@ -298,7 +289,7 @@
           <h2>Hybrid Approach</h2>
           <ul>
             <li class="fragment">Lives on both client and server</li>
-            <li class="fragment">SEO is easier</li>
+            <li class="fragment">Search engine optimization is easier</li>
             <li class="fragment">Less load on server</li>
           </ul>
         </section>
@@ -306,8 +297,8 @@
         <section>
           <h2>Proposal</h2>
           <ul>
-            <li class="fragment">New hybrid web app</li>
-            <li class="fragment">Uses new tech stack</li>
+            <li class="fragment">Hybrid web app</li>
+            <li class="fragment">New tech stack</li>
             <li class="fragment">Updated UI framework</li>
           </ul>
         </section>
@@ -315,9 +306,13 @@
         <section>
           <h2>New Tech Stack</h2>
           <ul>
-            <li class="fragment">Vue.js + Nuxt</li>
-            <li class="fragment">Node.js server (proxy to flask)</li>
+            <li class="fragment">Vue.js</li>
+            <li class="fragment">Node.js server</li>
           </ul>
+          <p class="fragment">
+            <img src="./assets/vue-logo.png" alt="" height=200>
+            <img src="./assets/node-logo.png" alt="" height=200 style="background-color: white">
+          </p>
         </section>
 
         <section>
@@ -325,7 +320,7 @@
           <ul>
             <li class="fragment">Better state management</li>
             <li class="fragment">Easier maintenance</li>
-            <li class="fragment">SEO, non-js crawler support</li>
+            <li class="fragment">search engine optimization, non-js crawler support</li>
             <li class="fragment">Responsive</li>
             <li class="fragment">FASTER!</li>
           </ul>
@@ -338,7 +333,7 @@
             <li class="fragment">Fewer page renders, utilizing virtual DOM</li>
             <li class="fragment">Pre-rendering on server, hydrate on client</li>
           </ul>
-          <p>* tested on prototype (wip)</p>
+          <p class="fragment">* tested on prototype (wip)</p>
         </section>
 
         <section>
@@ -378,13 +373,13 @@
         <section>
           <h2>How We Get There</h2>
           <ul>
-            <li class="fragment">90% rewrite</li>
+            <li class="fragment">Visual components need to be refactored</li>
+            <li class="fragment">User-facing part should stay mostly untouched</li>
             <ul>
-              <li class="fragment">Visual components need to be refactored</li>
+              <li class="fragment">Improvements to responsiveness</li>
+              <li class="fragment">Restructure of certain areas to provide better UX</li>
             </ul>
-            <li class="fragment">Continued Bumblebee maintenance</li>
-            <li class="fragment">Gradual work on new system</li>
-            <li class="fragment">Create MVP</li>
+            <li class="fragment">Gradual transition to new system</li>
           </ul>
         </section>
 
